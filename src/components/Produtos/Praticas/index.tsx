@@ -4,7 +4,9 @@ export default function Praticas() {
             <div>
                 <h2>Práticas e Modernas</h2>
             </div>
+            <div>
 
+            </div>
         </>
     )
 }

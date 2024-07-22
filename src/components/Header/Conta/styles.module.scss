@@ -1,0 +1,36 @@
+.accountContainer {
+    position: relative;
+    padding: 0 1rem;
+
+    .accountAvatar {
+        cursor: pointer;
+    }
+
+    .dropboxContainer {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .dropboxItem {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            cursor: pointer;
+
+            span {
+                padding-left: 10px;
+            }
+
+
+        }
+
+    }
+}

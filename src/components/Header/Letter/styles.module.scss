@@ -1,0 +1,13 @@
+.letterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #dda948;
+
+    p {
+        padding-top: 1rem;
+        font-weight: 700;
+    }
+}

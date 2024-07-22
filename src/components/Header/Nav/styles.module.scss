@@ -1,0 +1,97 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+    .logoContainer {
+        border: 1px solid red;
+    }
+
+    .menuContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        .menuItem {
+            padding: 0 2rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.5s;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .menuDropdown {
+            position: relative;
+
+            button {
+                font-weight: 700;
+                font-size: 1.2rem;
+                border: 0;
+                text-decoration: none;
+                background-color: transparent;
+                color: inherit;
+                padding: 0 2rem;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            .dropdownItens {
+                position: absolute;
+                top: 40px;
+                left: -450px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1300px;
+                height: 50px;
+                background-color: #fff;
+                border: 1px solid #515151;
+                border-radius: 0.4rem;
+                padding: 3rem 0;
+
+                .dropLink {
+                    width: 100%;
+                    height: 100%;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin: 1rem;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.button {
+    border: 0;
+    background-color: none;
+
+    color: inherit;
+    font: inherit;
+    outline: none;
+    transition: all 0.5s;
+
+    &:hover {
+
+        background-color: transparent;
+    }
+}

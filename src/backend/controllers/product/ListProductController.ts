@@ -1,5 +1,6 @@
-import { ListProductService } from "@/pages/services/product/ListProductService"
+
 import { NextApiRequest, NextApiResponse } from "next"
+import { ListProductService } from "../../services/product/ListProductService";
 
 export class ListProductController {
     async handle(req: NextApiRequest, res: NextApiResponse) {

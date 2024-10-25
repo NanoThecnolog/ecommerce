@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { CreateCategoryController } from "../controllers/category/CreateCategoryController";
-import { ListCategoryController } from "../controllers/category/ListCategoryController";
-import { DeleteCategoryController } from "../controllers/category/DeleteCategoryController";
+import { CreateCategoryController } from "../../backend/controllers/category/CreateCategoryController";
+import { ListCategoryController } from "../../backend/controllers/category/ListCategoryController";
+import { DeleteCategoryController } from "../../backend/controllers/category/DeleteCategoryController";
 
 export default async function Category(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {

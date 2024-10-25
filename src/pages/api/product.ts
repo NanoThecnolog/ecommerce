@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { CreateProductController } from "../controllers/product/CreateProductController";
-import { ListProductController } from "../controllers/product/ListProductController";
-import { DeleteProductController } from "../controllers/product/deleteProductController";
+import { CreateProductController } from "../../backend/controllers/product/CreateProductController";
+import { ListProductController } from "../../backend/controllers/product/ListProductController";
+import { DeleteProductController } from "../../backend/controllers/product/deleteProductController";
 
 export default async function Product(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {

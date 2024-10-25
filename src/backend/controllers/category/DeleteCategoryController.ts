@@ -1,5 +1,5 @@
-import { DeleteCategoryService } from "@/pages/services/category/DeleteCategoryService";
 import { NextApiRequest, NextApiResponse } from "next";
+import { DeleteCategoryService } from "../../services/category/DeleteCategoryService";
 
 export class DeleteCategoryController {
     async handle(req: NextApiRequest, res: NextApiResponse) {

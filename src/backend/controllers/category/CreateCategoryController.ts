@@ -1,10 +1,10 @@
-import { CreateCategoryService } from "@/pages/services/category/CreateCategoryService";
 import { NextApiRequest, NextApiResponse } from "next";
+import { CreateCategoryService } from "../../services/category/CreateCategoryService";
 
 export class CreateCategoryController {
     async handle(req: NextApiRequest, res: NextApiResponse) {
         try {
-            const createService = new CreateCategoryService;
+            const createService = new CreateCategoryService();
             const { name } = req.body
             const category = await createService.execute(name)
             return res.status(200).json(category)

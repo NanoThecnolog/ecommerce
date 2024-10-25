@@ -1,5 +1,5 @@
-import { AuthUserService } from "@/pages/services/user/AuthUserService";
 import { NextApiRequest, NextApiResponse } from "next";
+import { AuthUserService } from "../../services/user/AuthUserService";
 
 export class AuthUserController {
     async handle(req: NextApiRequest, res: NextApiResponse) {

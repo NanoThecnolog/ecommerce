@@ -1,5 +1,5 @@
-import { EditUserService } from "@/pages/services/user/EditUserService";
 import { NextApiRequest, NextApiResponse } from "next";
+import { EditUserService } from "../../services/user/EditUserService";
 
 export class EditUserController {
     async handle(req: NextApiRequest, res: NextApiResponse) {

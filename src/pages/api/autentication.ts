@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { AuthUserController } from "../controllers/user/AuthUserController";
+import { AuthUserController } from "../../backend/controllers/user/AuthUserController";
 
 export default async function Auth(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {

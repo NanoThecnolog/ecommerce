@@ -1,10 +1,10 @@
-import { ListCategoryService } from "@/pages/services/category/ListCategoryService";
 import { NextApiRequest, NextApiResponse } from "next";
+import { ListCategoryService } from "../../services/category/ListCategoryService";
 
 export class ListCategoryController {
     async handle(req: NextApiRequest, res: NextApiResponse) {
         try {
-            const listService = new ListCategoryService
+            const listService = new ListCategoryService()
             const list = await listService.execute();
             return res.status(200).json(list)
         } catch (err) {

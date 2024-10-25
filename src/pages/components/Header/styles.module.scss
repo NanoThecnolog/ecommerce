@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 12px;
+
+            li {
+                list-style: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

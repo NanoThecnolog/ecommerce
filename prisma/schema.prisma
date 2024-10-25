@@ -27,6 +27,7 @@ model Produto {
   id          String   @id @default(uuid())
   name        String
   price       Decimal  @default(0.00)
+  image       String
   description String
   model       String
   brand       String

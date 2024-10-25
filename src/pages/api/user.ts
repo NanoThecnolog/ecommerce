@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { CreateUserController } from "../controllers/user/CreateUserController";
-import { DetailUserController } from "../controllers/user/DetailUserController";
-import { EditUserController } from "../controllers/user/EditUserController";
+import { CreateUserController } from "../../backend/controllers/user/CreateUserController";
+import { DetailUserController } from "../../backend/controllers/user/DetailUserController";
+import { EditUserController } from "../../backend/controllers/user/EditUserController";
 
 export default async function user(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {

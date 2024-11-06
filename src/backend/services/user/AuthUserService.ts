@@ -10,7 +10,7 @@ export class AuthUserService {
         if (!userExiste) throw new Error("Usuário não encontrado")
         const passwordMatch = await compare(password, userExiste.password)
         if (!passwordMatch) throw new Error("Senha incorreta.")
-        const secret = process.env.SECRET_JWT
+        const secret = process.env.NEXT_PUBLIC_SECRET_JWT
         if (!secret) throw new Error("Variável de ambiente não definida")
         const token = await sign(
             {

@@ -1,0 +1,36 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #141414;
+        padding: 30px;
+        border-radius: .4rem;
+        width: 80%;
+        gap: 40px;
+
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .imageContainer {
+            position: relative;
+            width: 500px;
+            height: 500px;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                border-radius: 1rem;
+            }
+        }
+    }
+}

@@ -5,8 +5,8 @@ import { api } from "./services/api";
 import { ProductProps } from "@/@types/product";
 import { GetServerSideProps } from "next";
 import Header from "./components/Header";
-import Image from "next/image";
 import ProductCard from "./components/ProductCard";
+import ProdutoDestaque from "./components/ProdutoDestaque";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,14 +31,16 @@ export default function Home({ productList }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ProdutoDestaque produto={productList[2]} titulo="Descubra o melhor audio" />
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
           {productList.map(produto => (
-            <ProductCard produto={produto} />
+            <ProductCard produto={produto} key={produto.id} />
           ))}
         </main>
+
       </div>
     </>
   );

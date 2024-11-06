@@ -22,6 +22,7 @@ interface HomeProps {
   productList: ProductProps[]
 }
 export default function Home({ productList }: HomeProps) {
+
   return (
     <>
       <Head>
@@ -31,17 +32,22 @@ export default function Home({ productList }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ProdutoDestaque produto={productList[2]} titulo="Descubra o melhor audio" />
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <main className={styles.main}>
-          {productList.map(produto => (
-            <ProductCard produto={produto} key={produto.id} />
-          ))}
-        </main>
+      {productList ? (
+        <>
+          <ProdutoDestaque produto={productList[2]} titulo="Descubra o melhor audio" />
+          <div
+            className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+          >
+            <main className={styles.main}>
+              {productList.map(produto => (
+                <ProductCard produto={produto} key={produto.id} />
+              ))}
+            </main>
 
-      </div>
+          </div>
+        </>
+      ) : "Sem produtos..."}
+
     </>
   );
 }
@@ -51,7 +57,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
   return {
     props: {
-      productList: fetchProducts.data
+      productList: fetchProducts?.data
     }
   }
 }

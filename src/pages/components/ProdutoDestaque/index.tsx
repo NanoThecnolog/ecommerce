@@ -8,6 +8,13 @@ interface DestaqueProps {
 }
 
 export default function ProdutoDestaque({ produto, titulo }: DestaqueProps) {
+    if (!produto) {
+        return (
+            <section className={styles.container}>
+                <h1>Carregando....</h1>
+            </section>
+        )
+    }
     return (
         <section className={styles.container}>
             <div className={styles.leftContent}>

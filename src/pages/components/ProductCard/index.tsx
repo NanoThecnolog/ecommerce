@@ -9,6 +9,14 @@ interface ProductCardProps {
 
 export default function ProductCard({ produto }: ProductCardProps) {
     const desconto = 10
+
+    if (!produto) {
+        return (
+            <div>
+                Carregando...
+            </div>
+        )
+    }
     return (
         <div key={produto.id} className={styles.cardContainer}>
             <div className={styles.imageContainer}>

@@ -14,7 +14,3 @@ export class CreateCategoryController {
         }
     }
 }
-/*
-aposentadoria por tempo de contribuição, usando a lei de 2019, antes da constituinte, o valor da aposentadoria for melhor do que ela espera,
-ela pode recusar e dar entrada novamente depois de um tempo por idade ou por tempo de trabalho na lei nova?
-*/

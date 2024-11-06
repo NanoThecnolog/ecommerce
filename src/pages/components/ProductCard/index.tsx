@@ -1,7 +1,7 @@
 import { ProductProps } from "@/@types/product"
 import Image from "next/image"
 import styles from './styles.module.scss'
-import { calcularDesconto } from "@/pages/services/calcularDesconto"
+import { calcularDesconto } from "../../../services/calcularDesconto"
 
 interface ProductCardProps {
     produto: ProductProps

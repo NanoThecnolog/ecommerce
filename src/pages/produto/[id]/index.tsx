@@ -1,12 +1,12 @@
 import { ProductProps } from "@/@types/product";
 import Header from "@/pages/components/Header";
-import { api } from "@/pages/services/api";
+import { api } from "../../../services/api";
 import Head from "next/head";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 import styles from './styles.module.scss'
 import Image from "next/image";
-import { calcularDesconto } from "@/pages/services/calcularDesconto";
+import { calcularDesconto } from "../../../services/calcularDesconto";
 
 export default function ProductPage() {
     const router = useRouter()

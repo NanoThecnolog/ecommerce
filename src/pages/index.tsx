@@ -1,7 +1,7 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.scss";
-import { api } from "./services/api";
+import { api } from "../services/api";
 import { ProductProps } from "@/@types/product";
 import { GetServerSideProps } from "next";
 import Header from "./components/Header";
